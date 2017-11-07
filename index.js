@@ -1,15 +1,15 @@
 var info = require("./modules/OSinfo");
-
+var t = require("./modules/Time");
 
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
-    var i =  info.convertSecond(3601);
+    var i =  t.convertSecond(3601);
     console.log(i);
 
-    var j =  info.convertSecond(3662);
+    var j =  t.convertSecond(3662);
     console.log(j);
 
-    var j =  info.convertSecond(62);
+    var j =  t.convertSecond(62);
 
     console.log(j);
     if (input !== null) {

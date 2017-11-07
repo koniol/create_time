@@ -12,5 +12,5 @@ function convertSecond( second ) {
 }
 
 module.exports = {
-    converSecond : convertSecond
+    convertSecond : convertSecond
 }

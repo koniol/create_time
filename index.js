@@ -1,9 +1,9 @@
 var info = require("./modules/OSinfo");
-var convertSecond = require("./modules/Time");
+var converter = require("./modules/Time");
 
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
-    var uptimeProcess =  convertSecond.convertSecond(3601);
+    var uptimeProcess =  converter.convertSecond(3601);
 
     console.log(uptimeProcess);
 

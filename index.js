@@ -5,7 +5,7 @@ process.stdin.on('readable', function() {
     var input = process.stdin.read();
     var uptimeProcess =  converter.convertSecond(3601);
 
-    console.log(uptimeProcess);
+    info.print();
 
     if (input !== null) {
         var instruction = input.toString().trim();

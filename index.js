@@ -4,6 +4,7 @@ var convertSecond = require("./modules/Time");
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
     var uptimeProcess =  convertSecond.convertSecond(3601);
+
     console.log(uptimeProcess);
 
     if (input !== null) {

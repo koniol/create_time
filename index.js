@@ -1,17 +1,11 @@
 var info = require("./modules/OSinfo");
-var t = require("./modules/Time");
+var convertSecond = require("./modules/Time");
 
 process.stdin.on('readable', function() {
     var input = process.stdin.read();
-    var i =  t.convertSecond(3601);
-    console.log(i);
+    var uptimeProcess =  convertSecond.convertSecond(3601);
+    console.log(uptimeProcess);
 
-    var j =  t.convertSecond(3662);
-    console.log(j);
-
-    var j =  t.convertSecond(62);
-
-    console.log(j);
     if (input !== null) {
         var instruction = input.toString().trim();
         var nodeVer = process.versions.node;
